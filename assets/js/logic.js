@@ -14,6 +14,7 @@ $(document).ready(function(){
 
 		}).then(function(results){
 			console.log(results);
+			$("tbody").empty();
 			for (i = 0; i < results._embedded.events.length; i++){
 				tRow = $("<tr>");
 				event = $("<td>");
@@ -28,7 +29,8 @@ $(document).ready(function(){
 				tmLink = $("<img>");
 				tmLink.attr("src", results._embedded.events[i].url);
 				link.append(tmLink);
-
+				tRow.append(event, venue, date, ticketPrice, link);
+				$("tbody").append(tRow)
 			}
 		});
 	});	
