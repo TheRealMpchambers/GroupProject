@@ -1,0 +1,77 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../image/LightsBandCrowd.jpg) no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "Audrey";
+    src: url(../font/Audrey/Audrey-Medium.otf);
+
+}
+
+.wrapper {
+    margin: auto;
+    width: 60em;
+    min-height: 100%;
+}
+
+nav,
+section,
+footer {
+    float: left;
+    width: 100%;
+}
+
+header {
+    padding-top: 30px;
+    position: relative;
+    font-family: "Audrey", sans-serif;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+nav h1 {
+    float: left;
+    padding: .25em .25em 0 0;
+    font-size: 4.5em;
+}
+
+.nav-ul {
+    display: flex
+}
+
+header li {width: 20%;}
+header li:not(:first-child) {margin-left: 2%;}
+header .nav-ul a {
+  display: block;
+  padding: 1.75em .5em;
+  font-size:1.5em;
+  text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
