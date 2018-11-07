@@ -1,4 +1,23 @@
-.jumbotron {
+@font-face {
+    font-family: "Hoodson";
+    src: url("../font/Hoodson/HoodsonFF2.otf") format("opentype");
+    src: local("HoodsonFF2") format("opentype");
+}
+
+.h1, h1 {
+    font-size: 5em !important;
+    text-align: center;
+    font-family: "Hoodson" !important;
+}
+
+.a, a {
+    font-size: 2em !important;
+    text-align: center;
+    font-family: "Hoodson" !important;
+    margin: 1.5em;
+}
+
+#entrypageJumbo {
     margin-top: 100px;
     margin-bottom: 50px;
     min-height: 80%;
@@ -11,7 +30,7 @@
     background-size: 100% 100%;
 }
 
-.btn {
+#entrypageButton {
     padding: 15px 50px;
     border: 0;
     cursor: pointer;
@@ -20,8 +39,16 @@
     -ms-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
     text-transform: uppercase;
+    background: blueviolet;
+    color: black;
+    border: 3px solid white;
 }
 
-.btn-primary {
+#eventJumbo {
+    
+}
+
+#submitBtn {
     background: blueviolet;
+    color: black;
 }
