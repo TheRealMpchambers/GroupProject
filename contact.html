@@ -22,12 +22,12 @@
 
 <header role="banner">
     <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link active" href="about.html">About</a>
+        <li id="coolLinks" class="nav-item">
+            <a class="nav-link active" style="color:blueviolet;" href="about.html">About</a>
         </li>
-        <h1>Your Night Out</h1>
-        <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+        <h1><a style="color:black;" href="events.html">Your Night Out</a></h1>
+        <li id="coolLinks" class="nav-item">
+            <a class="nav-link" style="color:blueviolet;" href="contact.html">Contact Us</a>
         </li>
     </ul>
 </header>
@@ -42,7 +42,7 @@
 
             <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <form id="contact-form" name="contact-form">
 
                     <!--Grid row-->
                     <div class="row">
@@ -50,8 +50,8 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control">
-                                <label for="name" class="">Your name</label>
+                                <input type="text" class="form-control" id="keywordIn" placeholder="Your Name">
+                                <label for="name" class=""></label>
                             </div>
                         </div>
                         <!--Grid column-->
@@ -59,8 +59,8 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control">
-                                <label for="email" class="">Your email</label>
+                                <input type="text" class="form-control" id="keywordIn" placeholder="Email">
+                                <label for="email" class=""></label>
                             </div>
                         </div>
                         <!--Grid column-->
@@ -72,8 +72,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control">
-                                <label for="subject" class="">Subject</label>
+                                <input type="text" class="form-control" id="keywordIn" placeholder="Subject">
+                                <label for="subject" class=""></label>
                             </div>
                         </div>
                     </div>
@@ -86,8 +86,8 @@
                         <div class="col-md-12">
 
                             <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                <label for="message">Your message</label>
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Message"></textarea>
+                                <label for="message"></label>
                             </div>
 
                         </div>
@@ -97,7 +97,7 @@
                 </form>
 
                 <div class="text-center text-md-center">
-                    <a class="btn btn-info" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    <a id="submitBtn" class="btn btn-info" onclick="document.getElementById('contact-form').submit();">Send</a>
                 </div>
                 <div class="status"></div>
             </div>
