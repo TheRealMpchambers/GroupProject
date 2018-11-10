@@ -9,9 +9,11 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 	<script src="assets/js/logic.js"></script>
 </head>
 
@@ -65,7 +67,7 @@
 								<div class="card-header">
 									Events
 								</div>
-								<div class="card-body">
+								<div class="card-body eventCard" style="width: 50em">
 									<table class="table table-responsive">
 										<thead class="thead-dark">
 											<tr>
@@ -88,7 +90,7 @@
 								<div class="card-header">
 									Restaurants
 								</div>
-								<div class="card-body">
+								<div class="card-body restaurantCard" style="width: 50em">
 									<table class="table table-responsive">
 										<thead class="thead-dark">
 											<tr>
@@ -96,7 +98,6 @@
 												<td>Address</td>
 												<td>Rating</td>
 												<td>Price</td>
-												<td>Link</td>
 											</tr>
 										</thead>
 										<tbody id="restaurants">

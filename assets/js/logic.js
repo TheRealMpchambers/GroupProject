@@ -42,6 +42,7 @@ $(document).ready(function(){
 				link.append(tmLink);
 				tRow.append(event, venue, date, ticketPrice, link);
 				$("#events").append(tRow)
+				$(".eventCard").removeAttr("style");
 			}
 		});
 
@@ -71,8 +72,11 @@ $(document).ready(function(){
 				rPrice.text(data.results[i].price_level);
 				tRow.append(rName, rAddress, rRating, rPrice);
 				$("#restaurants").append(tRow);
+				$(".restaurantCard").removeAttr("style");
 			}
 		});
+
+
 
 	});
 	
