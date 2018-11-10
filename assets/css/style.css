@@ -10,11 +10,11 @@
     font-family: "Hoodson" !important;
 }
 
-.a, a {
+#coolLinks{
     font-size: 2em !important;
-    text-align: center;
+    text-align: center !important;
     font-family: "Hoodson" !important;
-    margin: 1.5em;
+    margin: 1.5em !important;
 }
 
 #entrypageJumbo {
@@ -40,16 +40,22 @@
         transform: translate(-50%,-50%);
     text-transform: uppercase;
     background: blueviolet;
-    color: black;
-    border: 3px solid white;
-}
-
-#eventJumbo {
-    
+    color: White;
+    border: 6px solid white !important;
 }
 
 #submitBtn {
-    background: blueviolet;
-    color: black;
+    background: blueviolet !important;
+    color: white !important;
 }
 
+#funNight {
+    
+    margin-left: 220px;
+}
+
+#about{
+
+    color: red;
+
+}
